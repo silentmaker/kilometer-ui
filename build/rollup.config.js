@@ -1,4 +1,3 @@
-// rollup.config.js
 import vue from 'rollup-plugin-vue';
 import buble from 'rollup-plugin-buble';
 import replace from 'rollup-plugin-replace';
