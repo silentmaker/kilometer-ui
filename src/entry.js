@@ -1,4 +1,4 @@
-import * as components from '../packages';
+import * as components from '../packages/index.js';
 
 // Plugin Usage
 const install = function(Vue) {
@@ -24,4 +24,4 @@ if (GlobalVue) {
 }
 
 // Component Modules
-export * from '../packages';
+export * from '../packages/index.js';
