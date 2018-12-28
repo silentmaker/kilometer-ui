@@ -11,7 +11,7 @@
             </li>
             <item :level="limit" :update="handleUpdate" :options="options" :model="treeData" />
         </ul>
-        <loading v-else></loading>
+
         <modal size="medium" @close="closeModal" @submit="createItem" v-if="showModal">
             <template slot="title">{{ modalTitle || '新增' }}</template>
             <template slot="body">
@@ -35,13 +35,12 @@
 </template>
 
 <script>
-import item from './item.vue';
-import modal from '../modal/modal.vue';
-import loading from '../loading/loading.vue';
+import item from './components/leaf.vue';
+import modal from '../modal/main.vue';
 
 export default {
     name: 'km-tree',
-    components: { item, modal, loading },
+    components: { item, modal },
     props: {
         data: Object,
         type: String,
